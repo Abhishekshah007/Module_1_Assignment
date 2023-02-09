@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="input">Number</string>
+    <string name="btn_message">Move to 2nd Activity </string>
+</resources>
