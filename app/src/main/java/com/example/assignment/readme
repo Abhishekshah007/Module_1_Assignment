@@ -1,0 +1,48 @@
+---Rough Documentation
+
+# Module_1_Assignment
+
+Main File link : https://github.com/Abhishekshah007/Module_1_Assignment/tree/master/app/src/main/java/com/example/assignment
+
+
+
+--> Problem:
+
+            Create your first application which has one activity. Create another activity named SecondActivity.Pass one number from the first activity and receive it on
+            the second activity and show it in the UI. When the user presses the back button on the second activity, it must return the same number by multiplying it by
+            2. (e.g. If the user has passed number 10 from the first activity, it should show 10 on the second activity but when the user presses the back button, it
+            should return 20). Receive the returned number from the second activity on the first activity and display it on the UI.
+            
+            
+--> Solution Summary:
+                      
+            So, first I downloaded Android Studio, then I created one project and selected Java as the programming language. After that, I created one activity, or we
+            can say a page, where we had to write a code to send the number to another activity, and then I created a second activity where we got the number that we
+            sent from activity 1, and after that, I added the back button concept so that we could fulfil the last statement where we had to multiply the number by 2.
+            
+            
+--> STEPS AND IDEAS FOR WRITING THIS CODE:
+
+            - Activity 1:
+              
+              - XML DATA
+                  - TEXTVIEW: I used this to show the value using setText after multiplying by 2.
+                  - EDITTEXT: I used this to take data(number) from user.
+                  - BUTTON:   I used this to send data from 2nd activity.
+                  
+              - Activity.java:
+                  - onClickListener : This method i used to button to add logic for sending data.
+                  - Intent: I used this for navigating from mainActivity to SecondActivity with some data.
+                  - onActivityResult: I used this acitivity for getting result after something completed in our case we finished our calculation.
+                  
+             
+             - SecondaryActivity:
+                
+                - XML DATA
+                     - TEXTVIEW: I used this to show number which we getting from mainActivity.
+                     
+                - SecondActivity.java:
+                     - Intent: I used this to get extra data which i put when we send from mainActivity and i aslo i use new intent for multyping data by 2 and then
+                     add that data and send to mainActivity by using intent.
+                     
+                - onBackPressed: This is default method which executed when we press andriod back button.
